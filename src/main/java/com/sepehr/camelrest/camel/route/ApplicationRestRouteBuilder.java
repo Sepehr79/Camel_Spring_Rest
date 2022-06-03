@@ -9,6 +9,8 @@ import com.sepehr.camelrest.model.entity.Customer;
 @Component
 public class ApplicationRestRouteBuilder extends RouteBuilder {
 	
+	public static final String REQUEST_GATE = "direct:gate";
+	
 	@Value("${camel.api.version}")
 	private String apiVersion;
 
